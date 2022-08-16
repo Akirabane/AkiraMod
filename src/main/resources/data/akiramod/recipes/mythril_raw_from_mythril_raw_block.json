@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "akiramod:raw_mythril_block"
+    }
+  ],
+  "result": {
+    "item": "akiramod:mythril_raw",
+    "count": 9
+  }
+}

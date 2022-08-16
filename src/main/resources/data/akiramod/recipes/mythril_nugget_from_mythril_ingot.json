@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "akiramod:mythril_ingot"
+    }
+  ],
+  "result": {
+    "item": "akiramod:mythril_nugget",
+    "count": 9
+  }
+}

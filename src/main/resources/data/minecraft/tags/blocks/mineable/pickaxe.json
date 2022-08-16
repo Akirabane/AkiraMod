@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "akiramod:raw_mythril_block",
+    "akiramod:mythril_block",
+    "akiramod:mythril_ore",
+    "akiramod:nether_mythril_ore",
+    "akiramod:deepslate_mythril_ore"
+  ]
+}

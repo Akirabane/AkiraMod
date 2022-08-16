@@ -20,6 +20,9 @@
   "entrypoints": {
     "main": [
       "net.akirabane.akiramod.AkiraMod"
+    ],
+    "client": [
+      "net.akirabane.akiramod.AkiraModClient"
     ]
   },
   "mixins": [
