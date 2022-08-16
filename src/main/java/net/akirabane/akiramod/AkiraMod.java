@@ -1,5 +1,6 @@
 package net.akirabane.akiramod;
 
+import net.akirabane.akiramod.block.ModBlocks;
 import net.akirabane.akiramod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
@@ -13,5 +14,6 @@ public class AkiraMod implements ModInitializer {
 	public void onInitialize() {
 
 		ModItems.registerModItems();
+		ModBlocks.registerModBLocks();
 	}
 }

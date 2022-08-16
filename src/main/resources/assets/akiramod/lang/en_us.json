@@ -1,3 +1,13 @@
 {
-  "item.akiramod.mythril_ingot": "Mythril Ingot"
+  "item.akiramod.mythril_ingot": "Mythril Ingot",
+  "item.akiramod.mythril_nugget": "Mythril Nugget",
+  "item.akiramod.mythril_raw": "Raw Mythril",
+
+  "block.akiramod.mythril_block": "Mythril Block",
+  "block.akiramod.mythril_ore": "Mythril Ore",
+  "block.akiramod.raw_mythril_block": "Raw Mythril Block",
+  "block.akiramod.nether_mythril_ore": "Nether Mythril Ore",
+  "block.akiramod.deepslate_mythril_ore": "Deepslate Mythril Ore",
+
+  "itemGroup.akiramod.mythril": "Akirabane Mod Tab"
 }
