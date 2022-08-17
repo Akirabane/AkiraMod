@@ -9,5 +9,7 @@
   "block.akiramod.nether_mythril_ore": "Nether Mythril Ore",
   "block.akiramod.deepslate_mythril_ore": "Deepslate Mythril Ore",
 
-  "itemGroup.akiramod.mythril": "Akirabane Mod Tab"
+  "itemGroup.akiramod.mythril": "Akirabane Mod Tab",
+
+  "entity.minecraft.villager.rawmaster": "Raw Master"
 }

@@ -1,0 +1,15 @@
+{
+  "item.akiramod.mythril_ingot": "Lingot de Mythril",
+  "item.akiramod.mythril_nugget": "Fragment de Mythril",
+  "item.akiramod.mythril_raw": "Mythril brute",
+
+  "block.akiramod.mythril_block": "Bloc de mythril",
+  "block.akiramod.mythril_ore": "Minerai de Mythril",
+  "block.akiramod.raw_mythril_block": "Bloc de mythril brut",
+  "block.akiramod.nether_mythril_ore": "Minerai de Mythril des bas fonds",
+  "block.akiramod.deepslate_mythril_ore": "Minerai de mythril des profondeurs",
+
+  "itemGroup.akiramod.mythril": "Akirabane Mod Tab",
+
+  "entity.minecraft.villager.rawmaster": "Maître du brut"
+}
