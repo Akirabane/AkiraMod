@@ -2,6 +2,7 @@ package net.akirabane.akiramod;
 
 import net.akirabane.akiramod.block.ModBlocks;
 import net.akirabane.akiramod.item.ModItems;
+import net.akirabane.akiramod.villager.ModVillagers;
 import net.akirabane.akiramod.world.feature.ModConfiguredFeatures;
 import net.akirabane.akiramod.world.gen.ModOreGeneration;
 import net.fabricmc.api.ModInitializer;
@@ -20,5 +21,8 @@ public class AkiraMod implements ModInitializer {
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBLocks();
+
+		ModVillagers.registerVillagers();
+		ModVillagers.registerTrades();
 	}
 }
