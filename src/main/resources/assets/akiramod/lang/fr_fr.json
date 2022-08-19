@@ -3,6 +3,12 @@
   "item.akiramod.mythril_nugget": "Fragment de Mythril",
   "item.akiramod.mythril_raw": "Mythril brute",
 
+  "item.akiramod.mythril_helmet": "Casque de Mythril",
+  "item.akiramod.mythril_chestplate": "Plastron de mythril",
+  "item.akiramod.mythril_leggings": "Jambières de mythril",
+  "item.akiramod.mythril_boots": "Bottes de mythril",
+
+
   "block.akiramod.mythril_block": "Bloc de mythril",
   "block.akiramod.mythril_ore": "Minerai de Mythril",
   "block.akiramod.raw_mythril_block": "Bloc de mythril brut",

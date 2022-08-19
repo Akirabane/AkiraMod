@@ -2,7 +2,6 @@ package net.akirabane.akiramod.item;
 
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorMaterial;
-import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
@@ -12,13 +11,16 @@ import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
 
-    LEATHER("leather", 5, new int[]{1, 2, 3, 1}, 15, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 0.0f, 0.0f, () -> Ingredient.ofItems(Items.LEATHER)),
-    CHAIN("chainmail", 15, new int[]{1, 4, 5, 2}, 12, SoundEvents.ITEM_ARMOR_EQUIP_CHAIN, 0.0f, 0.0f, () -> Ingredient.ofItems(Items.IRON_INGOT)),
-    IRON("iron", 15, new int[]{2, 5, 6, 2}, 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0f, 0.0f, () -> Ingredient.ofItems(Items.IRON_INGOT)),
-    GOLD("gold", 7, new int[]{1, 3, 5, 2}, 25, SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 0.0f, 0.0f, () -> Ingredient.ofItems(Items.GOLD_INGOT)),
-    DIAMOND("diamond", 33, new int[]{3, 6, 8, 3}, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 2.0f, 0.0f, () -> Ingredient.ofItems(Items.DIAMOND)),
-    TURTLE("turtle", 25, new int[]{2, 5, 6, 2}, 9, SoundEvents.ITEM_ARMOR_EQUIP_TURTLE, 0.0f, 0.0f, () -> Ingredient.ofItems(Items.SCUTE)),
-    NETHERITE("netherite", 37, new int[]{3, 6, 8, 3}, 15, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 3.0f, 0.1f, () -> Ingredient.ofItems(Items.NETHERITE_INGOT));
+    /**
+     * If you have any errors matching textures in-game but having them working,
+     * check the "tutorialmod" I made up for you or the "akiramod" if I did change it already.
+     * I made a complete tutorial on W:\srfta04\ServerAcces\AD\FabricMod\Akirabane\Dev\Armor\Akiramod\armor.mkv
+     *
+     * Plase make sure you follow my tutorial video correctly while implementing new armors.
+     */
+
+    MYTHRIL("mythril", 41, new int[]{3, 6, 8, 3}, 20,
+            SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 5.0f, 1.15f, () -> Ingredient.ofItems(ModItems.MYTHRIL_INGOT));
 
     private static final int[] BASE_DURABILITY;
     private final String name;
@@ -29,9 +31,6 @@ public enum ModArmorMaterials implements ArmorMaterial {
     private final float toughness;
     private final float knockbackResistance;
 
-    /**Deprecated instance enulm -> Float Armor places ingredient form.
-     * Please update deprecated to new version 1.19.1 -> 1.19.2
-     */
     @Deprecated
     private final Lazy<Ingredient> repairIngredientSupplier;
 
