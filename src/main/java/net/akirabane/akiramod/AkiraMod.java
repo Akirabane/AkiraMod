@@ -17,6 +17,7 @@ public class AkiraMod implements ModInitializer {
 	public void onInitialize() {
 
 		ModConfiguredFeatures.registerConfiguredFeatures();
+
 		ModOreGeneration.generateOres();
 
 		ModItems.registerModItems();
