@@ -1,4 +1,6 @@
 {
+  "itemGroup.akiramod.mythril": "Akirabane Mod Tab",
+
   "item.akiramod.mythril_ingot": "Mythril Ingot",
   "item.akiramod.mythril_nugget": "Mythril Nugget",
   "item.akiramod.mythril_raw": "Raw Mythril",
@@ -14,7 +16,14 @@
   "block.akiramod.nether_mythril_ore": "Nether Mythril Ore",
   "block.akiramod.deepslate_mythril_ore": "Deepslate Mythril Ore",
 
-  "itemGroup.akiramod.mythril": "Akirabane Mod Tab",
+  "entity.minecraft.villager.rawmaster": "Raw Master",
 
-  "entity.minecraft.villager.rawmaster": "Raw Master"
+  "key.category.akiramod.akirakeys": "AkiraMod Keybinds",
+  "key.akiramod.drink_water": "Drink water",
+
+  "message.akiramod.drank_water": "Drank water",
+  "message.akiramod.no_water": "No water arround",
+  "message.akiramod.current_thirst": "Thirst",
+  "message.akiramod.thirst_decreased": "You start feeling thirsty"
+
 }

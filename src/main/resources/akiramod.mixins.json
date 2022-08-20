@@ -4,6 +4,7 @@
   "package": "net.akirabane.akiramod.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "ModEntityDataSaverMixin"
   ],
   "client": [
     "ExampleMixin"

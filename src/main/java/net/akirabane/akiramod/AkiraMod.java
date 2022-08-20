@@ -1,11 +1,14 @@
 package net.akirabane.akiramod;
 
 import net.akirabane.akiramod.block.ModBlocks;
+import net.akirabane.akiramod.event.PlayerTickHandler;
 import net.akirabane.akiramod.item.ModItems;
+import net.akirabane.akiramod.networking.ModMessages;
 import net.akirabane.akiramod.villager.ModVillagers;
 import net.akirabane.akiramod.world.feature.ModConfiguredFeatures;
 import net.akirabane.akiramod.world.gen.ModOreGeneration;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -25,5 +28,9 @@ public class AkiraMod implements ModInitializer {
 
 		ModVillagers.registerVillagers();
 		ModVillagers.registerTrades();
+
+		ModMessages.registerC2SPackets();
+
+		ServerTickEvents.START_SERVER_TICK.register(new PlayerTickHandler());
 	}
 }

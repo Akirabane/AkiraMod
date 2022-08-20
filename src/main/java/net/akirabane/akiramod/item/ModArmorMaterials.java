@@ -11,14 +11,6 @@ import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
 
-    /**
-     * If you have any errors matching textures in-game but having them working,
-     * check the "tutorialmod" I made up for you or the "akiramod" if I did change it already.
-     * I made a complete tutorial on W:\srfta04\ServerAcces\AD\FabricMod\Akirabane\Dev\Armor\Akiramod\armor.mkv
-     *
-     * Plase make sure you follow my tutorial video correctly while implementing new armors.
-     */
-
     MYTHRIL("mythril", 41, new int[]{3, 6, 8, 3}, 20,
             SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 5.0f, 1.15f, () -> Ingredient.ofItems(ModItems.MYTHRIL_INGOT));
 

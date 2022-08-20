@@ -1,4 +1,6 @@
 {
+  "itemGroup.akiramod.mythril": "Akirabane Mod Tab",
+
   "item.akiramod.mythril_ingot": "Lingot de Mythril",
   "item.akiramod.mythril_nugget": "Fragment de Mythril",
   "item.akiramod.mythril_raw": "Mythril brute",
@@ -15,7 +17,13 @@
   "block.akiramod.nether_mythril_ore": "Minerai de Mythril des bas fonds",
   "block.akiramod.deepslate_mythril_ore": "Minerai de mythril des profondeurs",
 
-  "itemGroup.akiramod.mythril": "Akirabane Mod Tab",
+  "entity.minecraft.villager.rawmaster": "Maître du brut",
 
-  "entity.minecraft.villager.rawmaster": "Maître du brut"
+  "key.category.akiramod.akirakeys": "AkiraMod raccourcis",
+  "key.akiramod.drink_water": "Boire de l'eau",
+
+  "message.akiramod.drank_water": "Vous avez bu de l'eau",
+  "message.akiramod.no_water": "Il n'y a pas d'eau",
+  "message.akiramod.current_thirst": "Soif",
+  "message.akiramod.thirst_decreased": "Vous commencez à avoir soif"
 }
