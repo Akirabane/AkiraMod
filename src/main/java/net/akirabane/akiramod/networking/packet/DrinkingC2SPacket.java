@@ -19,7 +19,6 @@ import net.minecraft.util.math.BlockPos;
 public class DrinkingC2SPacket {
     private static final String MESSAGE_DRIKING_WATER = "message.akiramod.drank_water";
     private static final String MESSAGE_NO_WATER_NEARBY = "message.akiramod.no_water";
-    //private static final String MESSAGE_CURRENT_THIRST = "message.akiramod.current_thirst";
 
     public static void receive(MinecraftServer server, ServerPlayerEntity player, ServerPlayNetworkHandler handler,
                                PacketByteBuf buf, PacketSender responseSender) {
@@ -31,7 +30,7 @@ public class DrinkingC2SPacket {
             world.playSound(null, player.getBlockPos(), SoundEvents.ENTITY_GENERIC_DRINK, SoundCategory.PLAYERS,
                     0.5f, world.random.nextFloat() * 0.1f + 0.9f);
             ThirstData.addThirst(((IEntityDataSaver) player), 1);
-            player.sendMessage(Text.translatable("thirst: " + ((IEntityDataSaver) player).getPersistentData().getInt("thirst"))
+            player.sendMessage(Text.translatable("Thirst: " + ((IEntityDataSaver) player).getPersistentData().getInt("thirst"))
                     .fillStyle(Style.EMPTY.withColor(Formatting.AQUA)), true);
         } else {
             player.sendMessage(Text.translatable(MESSAGE_NO_WATER_NEARBY)

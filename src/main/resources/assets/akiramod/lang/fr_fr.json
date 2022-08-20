@@ -24,6 +24,5 @@
 
   "message.akiramod.drank_water": "Vous avez bu de l'eau",
   "message.akiramod.no_water": "Il n'y a pas d'eau",
-  "message.akiramod.current_thirst": "Soif",
   "message.akiramod.thirst_decreased": "Vous commencez à avoir soif"
 }

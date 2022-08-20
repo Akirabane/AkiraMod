@@ -32,7 +32,7 @@ public abstract class ModEntityDataSaverMixin implements IEntityDataSaver {
     @Inject(method = "readNbt", at = @At("HEAD"))
     protected void injectReadMethod(NbtCompound nbt, CallbackInfo info) {
         if(nbt.contains("akiramod.akira_data", 10)) {
-            persistentData = nbt.getCompound("akiramod_akira_data");
+            persistentData = nbt.getCompound("akiramod.akira_data");
         }
     }
 }

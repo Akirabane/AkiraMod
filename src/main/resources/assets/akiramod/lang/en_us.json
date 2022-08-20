@@ -23,7 +23,6 @@
 
   "message.akiramod.drank_water": "Drank water",
   "message.akiramod.no_water": "No water arround",
-  "message.akiramod.current_thirst": "Thirst",
   "message.akiramod.thirst_decreased": "You start feeling thirsty"
 
 }
