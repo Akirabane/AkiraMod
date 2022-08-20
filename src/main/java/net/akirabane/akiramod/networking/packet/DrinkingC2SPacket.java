@@ -19,22 +19,27 @@ import net.minecraft.util.math.BlockPos;
 public class DrinkingC2SPacket {
     private static final String MESSAGE_DRIKING_WATER = "message.akiramod.drank_water";
     private static final String MESSAGE_NO_WATER_NEARBY = "message.akiramod.no_water";
+    private static final String MESSAGE_NOT_THIRSTY = "message.akiramod.not_thirsty";
 
     public static void receive(MinecraftServer server, ServerPlayerEntity player, ServerPlayNetworkHandler handler,
                                PacketByteBuf buf, PacketSender responseSender) {
         //Everything here happends only on the server
         ServerWorld world = player.getWorld();
         if(isWaterArroundPlayer(player, world, 1)) {
-            player.sendMessage(Text.translatable(MESSAGE_DRIKING_WATER)
-                    .fillStyle(Style.EMPTY.withColor(Formatting.DARK_AQUA)), false);
-            world.playSound(null, player.getBlockPos(), SoundEvents.ENTITY_GENERIC_DRINK, SoundCategory.PLAYERS,
-                    0.5f, world.random.nextFloat() * 0.1f + 0.9f);
-            ThirstData.addThirst(((IEntityDataSaver) player), 1);
-            player.sendMessage(Text.translatable("Thirst: " + ((IEntityDataSaver) player).getPersistentData().getInt("thirst"))
-                    .fillStyle(Style.EMPTY.withColor(Formatting.AQUA)), true);
+            if(((IEntityDataSaver) player).getPersistentData().getInt("thirst") >= 10) {
+                player.sendMessage(Text.translatable(MESSAGE_NOT_THIRSTY)
+                        .fillStyle(Style.EMPTY.withColor(Formatting.DARK_AQUA)), false);
+            } else {
+                player.sendMessage(Text.translatable(MESSAGE_DRIKING_WATER)
+                        .fillStyle(Style.EMPTY.withColor(Formatting.DARK_AQUA)), false);
+                world.playSound(null, player.getBlockPos(), SoundEvents.ENTITY_GENERIC_DRINK, SoundCategory.PLAYERS,
+                        0.5f, world.random.nextFloat() * 0.1f + 0.9f);
+                ThirstData.addThirst(((IEntityDataSaver) player), 1);
+            }
         } else {
             player.sendMessage(Text.translatable(MESSAGE_NO_WATER_NEARBY)
                     .fillStyle(Style.EMPTY.withColor(Formatting.RED)), false);
+            ThirstData.syncThirst(((IEntityDataSaver) player).getPersistentData().getInt("thirst"), player);
         };
     }
 

@@ -3,6 +3,8 @@ package net.akirabane.akiramod.networking;
 import net.akirabane.akiramod.AkiraMod;
 import net.akirabane.akiramod.networking.packet.DrinkingC2SPacket;
 import net.akirabane.akiramod.networking.packet.ExampleC2SPackage;
+import net.akirabane.akiramod.util.ThirstSyncDataS2CPacket;
+import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.minecraft.util.Identifier;
 
@@ -20,6 +22,6 @@ public class ModMessages {
 
     //inputs from server-side to client in attend to client response.
     public static void registerS2CPackets() {
-
+        ClientPlayNetworking.registerGlobalReceiver(THIRST_SYNC_ID, ThirstSyncDataS2CPacket::receive);
     }
 }

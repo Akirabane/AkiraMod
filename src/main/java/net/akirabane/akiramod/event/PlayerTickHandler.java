@@ -16,7 +16,7 @@ public class PlayerTickHandler implements ServerTickEvents.StartTick {
     @Override
     public void onStartTick(MinecraftServer server) {
         for(ServerPlayerEntity player : server.getPlayerManager().getPlayerList()) {
-            if(new Random().nextFloat() <= 0.005f) {
+            if(new Random().nextFloat() <= 0.0005f) {
                 IEntityDataSaver dataPlayer = ((IEntityDataSaver) player);
                 ThirstData.removeThirst(dataPlayer, 1);
                 player.sendMessage(Text.translatable(MESSAGE_THIRST_DECREASED));
