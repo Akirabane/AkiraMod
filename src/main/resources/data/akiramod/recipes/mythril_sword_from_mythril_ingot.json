@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X",
+    "X",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "akiramod:mythril_ingot"
+    }
+  },
+  "result": {
+    "item": "akiramod:mythril_sword",
+    "count": 1
+  }
+}
