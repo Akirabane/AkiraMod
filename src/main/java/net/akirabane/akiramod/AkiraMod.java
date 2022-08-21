@@ -1,7 +1,7 @@
 package net.akirabane.akiramod;
 
 import net.akirabane.akiramod.block.ModBlocks;
-import net.akirabane.akiramod.event.PlayerTickHandler;
+import net.akirabane.akiramod.event.ThirstTickHandler;
 import net.akirabane.akiramod.item.ModItems;
 import net.akirabane.akiramod.networking.ModMessages;
 import net.akirabane.akiramod.villager.ModVillagers;
@@ -19,18 +19,22 @@ public class AkiraMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 
+		//Ore management
 		ModConfiguredFeatures.registerConfiguredFeatures();
-
 		ModOreGeneration.generateOres();
 
+		//Items & blocks management
 		ModItems.registerModItems();
 		ModBlocks.registerModBLocks();
 
+		//entity management
 		ModVillagers.registerVillagers();
 		ModVillagers.registerTrades();
 
+		//Client to server packet registering
 		ModMessages.registerC2SPackets();
 
-		ServerTickEvents.START_SERVER_TICK.register(new PlayerTickHandler());
+		//Thirst tick management
+		ServerTickEvents.START_SERVER_TICK.register(new ThirstTickHandler());
 	}
 }

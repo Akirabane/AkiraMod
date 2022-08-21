@@ -9,7 +9,7 @@ import net.minecraft.text.Text;
 
 import java.util.Random;
 
-public class PlayerTickHandler implements ServerTickEvents.StartTick {
+public class ThirstTickHandler implements ServerTickEvents.StartTick {
 
     private static final String MESSAGE_THIRST_DECREASED = "message.akiramod.thirst_decreased";
 
